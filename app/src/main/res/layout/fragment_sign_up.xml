@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="chetu.felixpat.letsply.fragments.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/primaryColor">
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="100dp"
+        >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_centerInParent="true"
+           android:background="@drawable/circle_white"
+           android:padding="15dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:src="@drawable/icon"
+               />
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/fragment_sign_up_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="UserName"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/fragment_sign_up_email"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="15dp"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:background="@drawable/edittextstyle"/>
+                <EditText
+
+                    android:id="@+id/fragment_sign_up_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:singleLine="true"
+                    android:hint="Password"
+                    android:padding="10dp"
+                    android:background="@drawable/edittextstyle"/>
+                <EditText
+                    android:id="@+id/fragment_sign_up_confirm_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Confirm Password"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@drawable/edittextstyle"/>
+
+                <Button
+                    android:id="@+id/fragment_sign_up_signUp"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttonstyle"
+                    android:text="Sign Up"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

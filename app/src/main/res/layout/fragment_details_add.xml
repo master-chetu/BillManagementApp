@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="chetu.felixpat.letsply.fragments.DetailsAddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:text="Name"/>
+
+        <EditText
+            android:id="@+id/fragment_details_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:background="@drawable/edittextstyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill No"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/fragment_details_add_bill"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:background="@drawable/edittextstyle"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:id="@+id/fragment_details_add_date"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/edittextstyle"/>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"/>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:id="@+id/fragment_details_add_amount"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:background="@drawable/edittextstyle"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/fragment_details_add_paid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:background="@drawable/edittextstyle"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+
+            <Button
+                android:id="@+id/fragment_details_add_add"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:text="Add"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="14dp"
+                android:background="@drawable/buttonstyle"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/fragment_details_add_done"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:text="Done"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="14dp"
+                android:background="@drawable/buttonstyle"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bill No"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Amount"
+            android:layout_marginLeft="25dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Paid"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="To be Paid"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/fragment_details_add_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp">
+
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
